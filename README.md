@@ -53,6 +53,18 @@ El sketch completo, con los cuatro LEDs y el parpadeo para las dudas, está en
    *Sketch → Include Library → Add .ZIP Library*.
 3. Selecciona una placa ESP32 en el gestor de placas.
 
+### PlatformIO
+
+En tu `platformio.ini`:
+
+```ini
+lib_deps =
+    https://github.com/cflarios/TayoriESP32.git#v0.1.0
+```
+
+`PubSubClient` lo resuelve solo (declarado en `library.json`). Hay un proyecto
+completo listo para copiar en [`platformio-example/`](platformio-example/).
+
 ## Configuración en Tayori
 
 En la app: **Ajustes → MQTT**.
